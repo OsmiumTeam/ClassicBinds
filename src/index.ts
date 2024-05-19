@@ -85,7 +85,7 @@ addEventListener("keydown", function(e){
 	if (classicBindsOpen) {
 		for (let i = 0; i < classicBindsUI.queue.length; i++) {
 			const element = classicBindsUI.queue[i];
-			UKeys.setKeybind(classicBindsObj.keyids[element], LWJGLKeycodes.indexOf(e.code))
+			ClassicBinds.setKeybind(classicBindsObj.keyids[element], LWJGLKeycodes.indexOf(e.code))
 		}
 		classicBindsUI.queue = []
 		UKrenderui()	
@@ -115,7 +115,7 @@ function UKrenderui() {
 
 		reset.setAttribute("class", "mcButton mcResetButton")
 		reset.innerHTML = "CLEAR"
-		reset.setAttribute("onclick", "UKeys.setKeybind('" + classicBindsObj.keyids[i] + "');UKrenderui()")
+		reset.setAttribute("onclick", "ClassicBinds.setKeybind('" + classicBindsObj.keyids[i] + "');UKrenderui()")
 		
 		if (classicBindsObj.keyvals[i] === "NONE") {
 			reset.setAttribute("disabled", "true")	
@@ -132,12 +132,12 @@ function UKrenderui() {
 	}
 }
 
-const UKeys = {
-	addKeybind:function(_title:string, _function:string, _defaultBind:string="NONE") {
+const ClassicBinds = {
+	addKeybind:function(_title:string, _code:string, _defaultBind:string="NONE") {
 		if (classicBindsObj.keyids.indexOf(_title) === -1) {
 			classicBindsObj.keyids.push(_title)
 			classicBindsObj.keyvals.push(_defaultBind)
-			classicBindsObj.functions.push(_function)				
+			classicBindsObj.functions.push(_code)				
 		}
 	},
 	removeKeybind:function(_title:string) {
