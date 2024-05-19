@@ -12,7 +12,7 @@ ClassicBinds is full rewrite of the [now retired] UniBinds to TypeScript.
 ### Method 1 (online) [autoupdates but only works when you are online]
 
 ```
-URL GOES HERE
+https://raw.githubusercontent.com/OsmiumTeam/ModBinaries/main/ClassicBinds.js
 ```
 
 1. Copy the URL above
@@ -25,7 +25,7 @@ URL GOES HERE
 **OR**
 
 ### Method 2 (local) [works offline but you have to update yourself]
-1. Download the mod from the Releases page
+1. Download the mod from the [Releases](https://github.com/OsmiumTeam/ClassicBinds/releases/latest) page
 2. Open EaglerForge (download [EaglerForge](https://github.com/eaglerforge/EaglerForge-builds/releases/latest))
 3. On the title screen, click "Mods"
 4. Click "Upload" and select the mod's ".js" file
