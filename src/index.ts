@@ -1,6 +1,6 @@
 /*
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	ClassicBinds | <GNU> Osmium Team
+	ClassicBinds | <C> Osmium Team [Under GNU GPL v3]
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 let classicBinds:boolean = true

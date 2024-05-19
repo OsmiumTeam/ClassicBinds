@@ -1,3 +1,7 @@
+/*
+	This is the original source code of UniBinds for anyone who wants it [LEGACY, not supported at all]
+*/
+
 let UniBind = true
 
 //json for keycodes
